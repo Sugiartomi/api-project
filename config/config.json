@@ -1,7 +1,7 @@
 {
     "development": {
-    "username": "root",
-    "password": "mysql",
+    "username": "tomi1487_root",
+    "password": "TomiMysql6!",
     "database": "tomi1487_api_project",
     "host": "127.0.0.1",
     "dialect": "mysql"
