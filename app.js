@@ -15,7 +15,7 @@ console.log(process.env.PORT);
 app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
-console.log("masuk");
+
 
 app.get("/", ((req, res) => {
   try {
