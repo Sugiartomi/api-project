@@ -16,6 +16,8 @@ app.use(cors())
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
+
+router.get("/", ((req, res) => res.status(200).json({port})))
 app.use(router)
 
 app.listen(port, () => {
