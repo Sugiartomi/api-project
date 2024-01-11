@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db-create" : "npx sequelize db:create",
+    "db-migrate" : "npx sequelize db:migrate",
+    "db-seed" : "npx sequelize db:seed:all",
+    "db-drop" : "npx sequelize db:drop"
   },
   "repository": {
     "type": "git",
