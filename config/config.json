@@ -3,7 +3,7 @@
     "username": "tomi1487_root",
     "password": "TomiMysql6!",
     "database": "tomi1487_api_project",
-    "host": "185.229.118.91",
+    "host": "185.229.118.91:3306",
     "dialect": "mysql"
   },
   "test": {

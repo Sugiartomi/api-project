@@ -6,7 +6,7 @@ const { OAuth2Client } = require("google-auth-library");
 
 class Controller {
   static async login(req, res, next) {
-    
+    console.log("masuk");
     try {
 
       let { username, password } = req.body;
@@ -25,7 +25,7 @@ class Controller {
 
       res.status(200).json({ access_token, username: find.username, email : find.email });
     } catch (error) {
-      next(error);
+      res.status(400).json(error)
     }
   }
 
@@ -39,7 +39,7 @@ class Controller {
       let reg = await User.create({ username, email, password, role });
       res.status(201).json({ id: reg.id, username: reg.username });
     } catch (error) {
-      next(error);
+      res.status(400).json(error)
     }
   }
 
