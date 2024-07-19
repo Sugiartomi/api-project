@@ -1,4 +1,5 @@
 const router = require('express').Router()
+const TodoController = require('../controllers/TodoController');
 const UserController = require("../controllers/UserController");
 const Authentication = require("../helpers/Authentication");
 const Authorization = require('../helpers/Authorization')
@@ -7,11 +8,12 @@ const Authorization = require('../helpers/Authorization')
 
 
 router.post("/login", UserController.login)
-
 router.post("/register", UserController.register)
 
+router.post("/add-category", TodoController.AddTodo)
 // Authentification
 // router.use(Authentication)
+
 
 
 

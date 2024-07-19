@@ -1,16 +1,16 @@
 {
     "development": {
-    "username": "tomi1487_root",
-    "password": "TomiMysql6!",
-    "database": "tomi1487_api_project",
-    "host": "127.0.0.1",
+      "username": "ttomyid_admin",
+      "password": "TomiProject6!",
+      "database": "ttomyid_api_project",
+      "host": "103.163.138.110",
     "dialect": "mysql"
   },
   "test": {
-    "username": "tomi1487_root",
-    "password": "TomiMysql6!",
-    "database": "tomi1487_api_project",
-    "host": "185.229.118.91",
+    "username": "ttomyid_admin",
+    "password": "TomiProject6!",
+    "database": "ttomyid_api_project",
+    "host": "103.163.138.110",
     "dialect": "mysql"
   },
   "production": {

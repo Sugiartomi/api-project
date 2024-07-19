@@ -12,14 +12,14 @@ const port = process.env.PORT || 8001
 
 console.log(process.env.PORT);
 
-app.use(cors())
+app.use(cors())  
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
 
 app.get("/", ((req, res) => {
   try {
-    res.status(200).json({port})
+    res.status(200).json({port, message : "Service On!", ENV : process.env.NODE_ENV})
   } catch (error) {
     res.send(error)
   }
@@ -27,5 +27,5 @@ app.get("/", ((req, res) => {
 app.use(router)
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${port}  Service On ENV ==> ${process.env.NODE_ENV}`)
 })
